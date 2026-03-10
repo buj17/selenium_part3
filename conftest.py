@@ -14,7 +14,7 @@ def pytest_addoption(parser: pytest.Parser):
 
 
 @pytest.fixture
-def driver(request: pytest.FixtureRequest):
+def browser(request: pytest.FixtureRequest):
     language = request.config.getoption('language')
 
     options = Options()
